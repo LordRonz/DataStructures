@@ -6,7 +6,7 @@ namespace DataStructures
 {
     class StackClass
     {
-        Stack_Node stackNode;
+        private Stack_Node stackNode;
         public StackClass()
         {
             stackNode = null;

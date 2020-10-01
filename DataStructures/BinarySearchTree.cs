@@ -6,7 +6,7 @@ namespace DataStructures
 {
     class BinarySearchTree
     {
-        BST_Node root;
+        private BST_Node root;
 
         public BinarySearchTree()
         {
