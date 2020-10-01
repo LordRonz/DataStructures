@@ -5,13 +5,13 @@ using System.Text;
 
 namespace DataStructures
 {
-    class SingleLinkedList
+    class SinglyLinkedList
     {
         private SLL_Node head;
         private SLL_Node current;
         private SLL_Node temp;
         public int count;
-        public SingleLinkedList()
+        public SinglyLinkedList()
         {
             head = null;
             current = null;

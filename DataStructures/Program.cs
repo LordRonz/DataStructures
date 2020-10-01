@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace DataStructures
 {
@@ -8,18 +9,18 @@ namespace DataStructures
         {
             Console.WriteLine("Hello World!");
             //Single Linked List
-            Console.WriteLine("---Single Linked List---");
-            SingleLinkedList damn = new SingleLinkedList();
-            damn.printList();
-            damn.addNode(5);
-            damn.addNode(69);
-            damn.addNode(420);
-            damn.addNode(666);
-            damn.printList();
-            damn.deleteNode(666);
-            damn.deleteNode(7);
-            damn.deleteNode(420);
-            damn.printList();
+            Console.WriteLine("---Singly Linked List---");
+            SinglyLinkedList mySingly = new SinglyLinkedList();
+            mySingly.printList();
+            mySingly.addNode(5);
+            mySingly.addNode(69);
+            mySingly.addNode(420);
+            mySingly.addNode(666);
+            mySingly.printList();
+            mySingly.deleteNode(666);
+            mySingly.deleteNode(7);
+            mySingly.deleteNode(420);
+            mySingly.printList();
 
             //Doubly Linked List
 
@@ -47,11 +48,26 @@ namespace DataStructures
                 myTree.addLeaf(treeKey[i]);
             }
             myTree.printInOrder();
+            Console.WriteLine();
             Console.WriteLine("The smallest value in the tree is {0}", myTree.findSmallest());
             myTree.removeNode(3);
             myTree.removeNode(69);
             myTree.removeNode(13);
             myTree.printInOrder();
+            Console.WriteLine();
+
+            //Stack
+
+            Console.WriteLine("---Stack---");
+            StackClass myStack = new StackClass();
+            myStack.push("Bob", 5);
+            myStack.push("Amy", 69);
+            myStack.push("John wick", 100);
+            myStack.push("Nice", 420);
+            myStack.print();
+            myStack.pop();
+            myStack.pop();
+            myStack.print();
         }
     }
 }
