@@ -68,6 +68,27 @@ namespace DataStructures
             myStack.pop();
             myStack.pop();
             myStack.print();
+
+            //Hash Table
+
+            Console.WriteLine("---Hash Table---");
+            HashTable myTable = new HashTable(10);
+            myTable.addItem("Paul", "Locha");
+            myTable.addItem("Kim", "Iced mocha");
+            myTable.addItem("Emma", "Strawberry smoothie");
+            myTable.addItem("Annie", "Hot Chocolate");
+            myTable.addItem("Sarah", "Passion Tea");
+            myTable.addItem("Pepper", "Caramel Mocha");
+            myTable.addItem("Mike", "Chai Tea");
+            myTable.addItem("Steve", "Apple Cider");
+            myTable.addItem("Bill", "Root Beer");
+            myTable.addItem("Marie", "Skinny Latte");
+            myTable.addItem("Susan", "Water");
+            myTable.addItem("Joe", "Green Tea");
+            myTable.printTable();
+            myTable.printItemsInIndex(4);
+            myTable.removeItem("Marie");
+            myTable.printItemsInIndex(4);
         }
     }
 }
